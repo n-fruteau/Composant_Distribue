@@ -1,0 +1,10 @@
+interface TchatClient{
+    void connect(in string srv);
+    void send(in string msg);
+    void receive(in string msg);
+};
+
+interface TchatServer{
+  void register(in TchatClient c);
+  void dispatch(in string msg);
+};

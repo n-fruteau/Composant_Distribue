@@ -1,0 +1,7 @@
+cd Documents\NetBeansProjects\Composant\src\composant
+javac -cp . *.java
+cd ..
+rmic -classpath . composant.TchatServerImp composant.TchatClientImp
+rmiregistry.exe
+java -cp . composant.TchatServerImp
+java -cp . composant.TchatClientImp
