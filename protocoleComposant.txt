@@ -5,3 +5,4 @@ rmic -classpath . composant.TchatServerImp composant.TchatClientImp
 rmiregistry.exe
 java -cp . composant.TchatServerImp
 java -cp . composant.TchatClientImp
+
